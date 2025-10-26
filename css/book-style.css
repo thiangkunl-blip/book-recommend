@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ffffff 25%, #ffffff 75%);
+  background-attachment: fixed;
+
+
+/* ตัวอักษรส่วนเนื้อหาทั่วไปของเว็บ */
+  font-family: 'Noto Serif Thai', serif;/* ฟอนต์ไทยจาก Google Fonts */
+  color: #000000;/* สีน้ำเงินกรม */
+  line-height: 2;/* ระยะห่างระหว่างบรรทัด */
+  margin-bottom: 1em;/* ระยะห่างระหว่างย่อหน้า */
+}
+
+
+
+
+
+
+/* ขนาดโลโก้ และ ตัวอักษรแถบเมนูอย่างเดียว */
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.bold-text {
+  /* font-weight: bold; */
+  font-family: 'Noto Serif Thai', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  text-transform: uppercase;
+  color: rgb(4, 0, 63);
+}
+
+
+
+
+
+
+
+/* กล่องข้อมูลสั้นๆ เกี่ยวกับหนังสือ 4 กล่องใต้รูป + เคลื่อนไหว */
+
+.card-custom {
+  background-color: #f4feff; /* สีเหลืองนวลแบบอบอุ่น */
+  border-radius: 15px;       /* ขอบมน */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงาเบา ๆ */
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-3px); /* เพิ่มลูกเล่นตอน hover */
+}
+
+
+
+
+
+
+
+/* รูปหนังสือหลัก + เคลื่อนไหว + ตกแต่งแค่หนังสือหลัก */
+
+.book {
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); ใส่เงาด้านล่าง */
+  border-radius: 10px;
+  /*มุมมนเล็กน้อย*/
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  /*เพิ่มเอฟเฟกต์เวลา hover */
+  display: block;
+  /* margin-left: auto; ดันรูปไปชิดขวา */
+  max-width: 100%;
+  height: auto;
+
+}
+
+.book-bg {
+  /* background-color: #ffa8ca; */
+  background: linear-gradient(to right, #0e0e46 25%, rgb(4, 10, 63) 75%);
+}
+
+.book:hover {
+  transform: scale(1.05);
+  /* ขยายเล็กน้อยเวลาเอาเมาส์ชี้ */
+  box-shadow: 0 20px 40px rgb(255, 255, 255);
+  /* เงาเข้มขึ้น */
+}
+
+
+
+
+
+
+
+
+/* ตัวอักษรที่เน้น สีขาว-เหลือง ตรงจุดที่สำคัญ นอกเหนือจากเนื้อหาทั่วไป */
+
+.im-text {
+  font-family: 'Noto Serif Thai', serif;/* ฟอนต์ไทยจาก Google Fonts */
+  color: #f5e663;/* สีน้ำเงินกรม */
+  line-height: 2;/* ระยะห่างระหว่างบรรทัด */
+  margin-bottom: 1em;/* ระยะห่างระหว่างย่อหน้า */
+}
+.sub-text {
+  font-family: 'Noto Serif Thai', serif;/* ฟอนต์ไทยจาก Google Fonts */
+  color: #f3f3f3;/* สีน้ำเงินกรม */
+  line-height: 1.5;/* ระยะห่างระหว่างบรรทัด */
+  margin-bottom: 1em;/* ระยะห่างระหว่างย่อหน้า */
+}
+
+
+
+
+
+
+
+
+
+
+
